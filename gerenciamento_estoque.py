@@ -1,11 +1,3 @@
-'''O Enunciado: Escreva um programa que permita ao usuário gerenciar uma lista de preços de produtos. O programa deve:
-Entrada em Laço: Permanecer em um laço while lendo nomes de produtos e seus respectivos preços (use input() e conversão para float).
-Armazenamento: Armazenar os nomes em uma lista e os preços em outra (ou use uma lista de listas/tuplas se quiser arriscar).
-Condição de Parada: O laço deve terminar quando o usuário digitar "SAIR" no nome do produto.
-Processamento com for: Após sair do laço, use um comando for para percorrer as listas e calcular:
-A média de preço dos produtos.
-O nome do produto mais caro e do mais barato.
-Tratamento de Erros: Use um bloco try-except para garantir que o programa não quebre caso o usuário digite um preço inválido (letras em vez de números).'''
 def armazenar_produto(lista, nome, preco):
     lista.append((nome, preco))
 
