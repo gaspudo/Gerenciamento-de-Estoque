@@ -1,7 +1,19 @@
 def armazenar_produto(lista, nome, preco):
+    '''
+    Docstring for armazenar_produto
+    
+    :param lista: list - Lista onde os produtos serão armazenados.
+    :param nome: str - Nome do produto.
+    :param preco: float - Preço Unitário do produto.
+    '''
     lista.append((nome, preco))
 
 def exibir_resultados(lista):
+    '''
+    Docstring for exibir_resultados
+    
+    :param lista: list - Nome da lista que deseja exibir.
+    '''
     if not lista:
         print("\n[!] Estoque vazio. Nada a processar.")
         return
