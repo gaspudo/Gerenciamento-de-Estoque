@@ -7,7 +7,7 @@ def armazenar_produto(lista, nome, preco, qtde):
     :param preco: float - Preço Unitário do produto.
     :param qtd: int - Quantidade de produtos adicionados de uma unica vez.
     '''
-    for i in range(qtde+1):
+    for i in range(qtde):
         lista.append((nome, preco,))
 
 def exibir_resultados(lista):
