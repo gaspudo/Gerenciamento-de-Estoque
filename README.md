@@ -2,7 +2,7 @@
 Este é um projeto desenvolvido para consolidar fundamentos de lógica de programação em Python, focado em manipulação de estruturas de dados (listas e tuplas), controle de fluxo e tratamento de exceções.
 
 ## 🚀 Funcionalidades
-###Entrada Dinâmica: 
+### Entrada Dinâmica: 
 Cadastro de produtos e preços via terminal com normalização de strings.
 
 ### Tratamento de Erros: 
