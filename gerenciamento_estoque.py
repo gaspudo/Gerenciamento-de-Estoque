@@ -1,12 +1,14 @@
-def armazenar_produto(lista, nome, preco):
+def armazenar_produto(lista, nome, preco, qtde):
     '''
     Docstring for armazenar_produto
     
     :param lista: list - Lista onde os produtos serão armazenados.
     :param nome: str - Nome do produto.
     :param preco: float - Preço Unitário do produto.
+    :param qtd: int - Quantidade de produtos adicionados de uma unica vez.
     '''
-    lista.append((nome, preco))
+    for i in range(qtde+1):
+        lista.append((nome, preco,))
 
 def exibir_resultados(lista):
     '''
@@ -29,6 +31,7 @@ def exibir_resultados(lista):
     p_caro, v_caro = lista[-1]
 
     print(f"\n--- Relatório ---")
+    print(f'Elementos presentes na lista {len(lista)}')
     print(f"Média: R${media:.2f}")
     print(f"Mais Barato: {p_barato} (R${v_barato:.2f})")
     print(f"Mais Caro: {p_caro} (R${v_caro:.2f})")
@@ -45,9 +48,18 @@ if __name__ == "__main__":
         
         try:
             valor = float(input(f"Digite o preço de {nome}: "))
-            armazenar_produto(lista_produtos, nome, valor)
+            qtde = int(input(f'Digite a quantidade que {nome} irá ser armazenado :'))
+            armazenar_produto(lista_produtos, nome, valor, qtde)
         except ValueError:
             print("Erro!! Digite um número válido para o preço.")
 
     exibir_resultados(lista_produtos)
-    print("Fim do programa.")
+
+mostrar_lista = input('Deseja visualizar a lista toda? (s/n) ').strip()
+if mostrar_lista.lower() == 's':
+    print('Lista Completa: ')
+    for i in lista_produtos:
+        print(f'{i} \n')
+else:
+    pass
+print("Fim do programa.")
