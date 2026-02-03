@@ -5,10 +5,10 @@ Este é um projeto desenvolvido para consolidar fundamentos de lógica de progra
 ###Entrada Dinâmica: 
 Cadastro de produtos e preços via terminal com normalização de strings.
 
-###Tratamento de Erros: 
+### Tratamento de Erros: 
 Validação de tipos de dados para evitar quebras por entradas inválidas (ex: letras no campo de preço).
 
-###Processamento de Dados:
+### Processamento de Dados:
 
 Cálculo automático de média aritmética de preços.
 
@@ -16,13 +16,13 @@ Identificação do produto de maior e menor valor.
 
 Ordenação dinâmica da lista de produtos por preço.
 
-###Modularidade: 
+### Modularidade: 
 Código estruturado em funções e protegido pelo bloco if __name__ == "__main__": para permitir importação modular.
 
 ## 🛠️ Tecnologias Utilizadas
 Python 3.x
 
-###Estruturas: 
+### Estruturas: 
 list, tuple, lambda functions para ordenação.
 
 ## 📂 Como rodar o projeto
@@ -38,7 +38,7 @@ Bash
 python gerenciamento-estoque.py
 
 ## 🧠 O que eu aprendi neste projeto
-###Neste desafio, foquei em resolver problemas comuns de quem está começando:
+### Neste desafio, foquei em resolver problemas comuns de quem está começando:
 
 Escopo de Variáveis: Aprendi a importância de não depender de variáveis globais e como passar argumentos entre funções.
 
